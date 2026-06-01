@@ -1,7 +1,7 @@
 {
   "name": "@luxamm/v2-core",
   "description": "Lux AMM V2 core contracts. Fork of upstream Uniswap v2-core.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://luxamm.io",
   "repository": "git+https://github.com/lux-amm/v2-core.git",
   "keywords": [
@@ -38,8 +38,10 @@
     "precompile": "yarn clean",
     "compile": "waffle .waffle.json",
     "pretest": "yarn compile",
-    "test": "mocha",
-    "prepublishOnly": "yarn test"
+    "test": "mocha"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "publishConfig": {
+    "access": "public"
+  }
 }
